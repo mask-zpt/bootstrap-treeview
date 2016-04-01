@@ -1,0 +1,575 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /><meta name="HandheldFriendly" content="true" /><meta name="format-detection" content="telephone=no" /><title>
+	联人中心
+</title><link href="/res/bootstrap/css/bootstrap.min.css" rel="stylesheet" /><link href="/res/font-awesome/css/font-awesome.min.css" rel="stylesheet" /><link href="/css/main.min.css?v=20150606" rel="stylesheet" /><link href="/resSelf/agentCenter/css/Common.css" rel="stylesheet" /><link href="/css/basic.css" rel="stylesheet" /><link href="/css/writer.css" rel="stylesheet" /><link href="/css/theme/blue/blue.css" rel="stylesheet" />
+    <style type="text/css">
+    .checkPreBoxMid {padding:0;}
+    .checkPreBoxMid img {display:block;}
+    /*layermcont {padding:0 !important; line-height: 22px; text-align: center;}*/
+    .layermbox0 .layermchild { width: 80% !important; }
+    .checkPreBox {display:block !important; }
+    </style>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <form method="post" action="1" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="o0aQD4snnzvfQMKcZtbJGAku/ZjQfCqIpc0Yot9yn323arsxiev8VJZlPKCASN3PEyQ6LVl9vV7D4+BwGlKZaeXR4RFxDgjj+hB8jvXvDLJ0Ol2EF9EyXBH81AG5vERB" />
+</div>
+
+        <div id="container" class="container">
+            <div class="row">
+                <div class="titleBox col-xs-12 clearfix">
+                    <span class="pull-left"><a href="javascript:history.go(-1)"><img src="/images/back.png"/></a></span>
+                    <span>联合中心</span>
+                    <span class="pull-right"><a href="/sponsorsin"><img src="/images/homeBlue.png"/></a></span>
+                </div>
+            </div>
+            <div id="user-info" class="row bgColorWhite">
+                    
+                        <div class="col-xs-12 padding10 topCheck">
+                            <img class="topCheckImg" src="/images/remind-1.png" />
+                            <b class="font16">资料未完善</b>
+                            <span class="font12">，请<a href="/sponsorsaddition/1" class="colorRed">完善资料</a></span>
+                        </div>
+               
+                    
+                         
+                    <!--个人信息-->
+                </div>
+
+            <!--联起人群信息-->
+            <div class="row bgColorWhite">
+                <div class="col-xs-12 ">
+                    <p class="clearfix bigTitle marginBottom0">
+                        
+                        <span class="fl font18 bigTitleL">TA们也在这里</span>
+                        
+                        <a id="changeList" href="javascript:void(0);" class="fr bigTitleR font12 color9">换一换
+                            <img src="/images/title-1.png" /></a>
+                    </p>
+                    <dl id="conList" class="conList">
+
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+         
+<div class="hidHeight"></div>
+<div class="navBottom">
+    <dl class="clearfix">
+        <dd class="navBottomFirst">
+            <p class="navBottomItem">
+
+                
+                <a href="/stu_profile">
+                  
+                    <img src="/UploadImage/uheaderImg/bm81xfgx.png" /></a>
+                
+            </p>
+        </dd>
+        
+                    <dd>
+                        <p class="navBottomItem"><a href="http://tgjs.5ge.cn/join">学员招募</a></p>
+                    </dd>
+                
+                    <dd>
+                        <p class="navBottomItem"><a href="http://tgjs.5ge.cn/my">学员中心</a></p>
+                    </dd>
+                
+                    <dd>
+                        <p class="navBottomItem"><a href="http://tgjs.5ge.cn/">商品列表</a></p>
+                    </dd>
+                
+        
+ 
+    </dl>
+</div>
+<script src="/js/WeixinTools.js"></script>
+ 
+
+        <!--未进群提示-->
+    </form>
+
+    <div class="coverBg" id="cover1" data-index="1" style="/* display: block; */">
+            <img class="know2 desc" src="/images/remindWrite2.png" width="184"/>
+        <a href="/sponsorsaddition/1" ><input type="button" class="btn center-block  btn70  centerBannerBtn maskBtn know2Img" value="完善资料"/></a>
+    </div>
+    <div class="coverBg" id="cover2" data-index="2" style="/* display: block; */">
+            <img class="know3 desc" src="/images/remindWrite3.png" width="201"/>
+        <a href="/sponsorsaddress/1" ><input type="button" class="btn center-block  btn70  centerBannerBtn maskBtn know2Img" value="填写收货地址"/> </a>
+    </div>
+    <div class="coverBg" id="cover3" data-index="3" style="/* display: block; */">        
+            <img class="know1 desc" src="/images/remindWrite1.png" width="162"/>
+            <a id="headerimage"  href="javascript:void(0);" class="centerBannerImg maskBtn know1Img"><img class="header" src=""/></a>
+    </div>
+
+    <script src="/res/jquery/jquery-2.1.3.min.js"></script>
+    <script src="/res/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/res/layer/layer.js"></script>
+    <script src="/res/artTemplate/template.js"></script>
+    <script src="/js/tools.min.js"></script>
+    <script src="/res/jquery-dateFormat/jquery-dateFormat.min.js"></script>
+    <script id="nonenter-temp" type="text/html">
+        <!--未进群提示-->
+        <div class="coverBanzhang">
+            <p class="coverBanzhangTitle"><b>您还未加入微信群</b></p>
+            <div class="coverBanzhangCon">
+                <p class="coverBanzhangConTitle"><b>请按照以下步骤操作：</b></p>
+                <p class="coverBanzhangConStep"><span>1</span> 长按复制以下信息 , 稍后使用<b>联{{student.StudentNo}}{{signInfo.RealName}}</b></p>
+                {{if master.BZQrCode == null}}
+                <p class="coverBanzhangConStep"><span>2</span> 将复制好的信息发送给班长</p>
+                {{/if}}
+                {{if master.BZQrCode!==null}}
+                <p class="coverBanzhangConStep"><span>2</span> 长按下图二维码，加班长为好友，将复制好的信息发送给班长</p>
+                   <img class="coverBanzhangImg" src="{{master.BZQrCode}}" />
+                {{/if}}
+                <p class="coverBanzhangWord">{{master.BZName}}班长微信：{{master.WeixinHao}}</p>
+            </div>
+        </div>
+    </script>
+    <script id="signed-tmpl" type="text/html">
+        {{if sign!==null && (sign.AuditStatus== 3)}}
+        <div class="col-xs-12 centerBanner">
+            <img class="centerBannerBg" src="/images/center-banner2.png" />
+            <div class="centerBannerCon">
+                <p class="text-center font18 colorWhite marginTop15">
+                    <b>《{{sponsors.Title}}》发起人</b>
+                </p>
+                <a class="centerBannerImg cover-part3" href="/sponsorscentorcon/{{sponsors.ID}}">
+                    {{if uuser.headimgurl!==null}}
+                    <img src="{{uuser.headimgurl}}" />
+                    {{else}}
+                    <img src="/images/header-img2.jpg" />
+                    {{/if}}
+                </a>
+                <p class="text-center font12 centerBannerName">
+                    {{sign.RealName}}
+                    <br />
+                    电话：{{sign.Mobilephone}}                       
+                    <br />
+                    <img src="/images/step11.png" width="20" />
+                    <span style="color: #fffc00">审核已通过</span>
+                </p>
+
+                <input id="lianheZhengShu" type="button" class="btn center-block  btn70  centerBannerBtn" value="生成人证书" />
+            </div>
+        </div>
+        {{/if}}
+        {{if   sign!==null &&   sign.AuditStatus== 0 }}
+        <div class="col-xs-12 centerBanner">
+            <img class="centerBannerBg" src="/images/center-banner2.png" />
+            <div class="centerBannerCon">
+                <p class="text-center font18 colorWhite marginTop15">
+                    <b>《{{sponsors.Title}}》联合发起人</b>
+                </p>
+                <a class="centerBannerImg cover-part3" href="/sponsorscentorcon/{{sponsors.ID}}">
+                    {{if uuser.headimgurl!==null}}
+                    <img src="{{uuser.headimgurl}}" />
+                    {{else}}
+                    <img src="/images/header-img2.jpg" />
+                    {{/if}}
+                </a>
+                <p class="text-center font12 centerBannerName">
+                    {{sign.RealName}}
+                    <br />
+                    电话：{{sign.Mobilephone}}
+                </p>
+                <p class="text-center font12 centerBannerName">
+                    资料未完善
+                </p>
+                <a href="/sponsorsaddition/{{sponsors.ID}}">
+                    <input  type="button" class="cover-part1 cover-part2 btn center-block  btn70  centerBannerBtn" value="完善资料" />
+                </a>
+            </div>
+        </div>
+        {{/if}}
+        {{if   sign!==null &&  sign.AuditStatus== 1}}
+        <div class="col-xs-12 centerBanner">
+            <img class="centerBannerBg" src="/images/center-banner2.png" />
+            <div class="centerBannerCon">
+                <p class="text-center font18 colorWhite marginTop15">
+                    <b>《{{sponsors.Title}}》发起人</b>
+                </p>
+                <a class="centerBannerImg cover-part3" href="/sponsorscentorcon/{{sponsors.ID}}">{{if uuser.headimgurl!==null}}
+                    <img src="{{uuser.headimgurl}}" />
+                    {{else}}
+                    <img src="/images/header-img2.jpg" />
+                    {{/if}}
+                </a>
+                <p class="text-center font12 centerBannerName">
+                    {{sign.RealName}}
+                    <br />
+                    电话：{{sign.Mobilephone}}
+                </p>
+                <p class="text-center cover-part2  font12 centerBannerName">
+                   资料审核中,请耐心等待
+                </p>
+                {{if !orderstate && sponsors.EnableAddress && !(sign.AddressId&&sign.AddressId>0) }}
+                <a href="/sponsorsaddress/{{sponsors.ID}}">
+                    <input type="button" class="cover-part1 cover-part2 btn center-block  btn70  centerBannerBtn" value="填写收货地址" />
+                </a>
+                {{/if}}
+            </div>
+        </div>
+        {{/if}}
+         {{if   sign!==null &&  sign.AuditStatus== 2}}
+        <div class="col-xs-12 centerBanner">
+            <img class="centerBannerBg" src="/images/center-banner2.png" />
+            <div class="centerBannerCon">
+                <p class="text-center font18 colorWhite marginTop15">
+                    <b>《{{sponsors.Title}}》联起人</b>
+                </p>
+                <a class="centerBannerImg cover-part3" href="/sponsorscentorcon/{{sponsors.ID}}">{{if uuser.headimgurl!==null}}
+                    <img src="{{uuser.headimgurl}}" />
+                    {{else}}
+                    <img src="/images/header-img2.jpg" />
+                    {{/if}}
+                </a>
+                <p class="text-center font12 centerBannerName">
+                    {{sign.RealName}}
+                    <br />
+                    电话：{{sign.Mobilephone}}
+                </p>
+                <p class="text-center font12 centerBannerName">
+                    资料审核失败
+                    <a href="/sponsorsaddition/{{sponsors.ID}}">
+                        <input type="button" class="cover-part1 cover-part2 btn center-block  btn70  centerBannerBtn" value="修改资料" />
+                    </a>
+                </p>
+            </div>
+        </div>
+        {{/if}}
+        {{if   sign ===null}}
+        <div class="col-xs-12 centerBanner">
+            <img class="centerBannerBg" src="/images/center-banner2.png" />
+            <div class="centerBannerCon">
+                <p class="text-center font18 colorWhite marginTop15">
+                    <b>《{{sponsors.Title}}》联起人</b>
+                </p>
+                <a class="centerBannerImg cover-part3" href="/sponsorscentorcon/{{sponsors.ID}}">{{if uuser.headimgurl!==null}}
+                    <img src="{{uuser.headimgurl}}" />
+                    {{else}}
+                    <img src="/images/header-img2.jpg" />
+                    {{/if}}
+                </a>
+                <p class="text-center cover-part1 cover-part2  font12 centerBannerName">
+                    信息不完整,请刷新
+                </p>
+            </div>
+        </div>
+        {{/if}}
+    </script>
+    <script id="class-temp" type="text/html">
+        <!--群信息-->
+        <div class="col-xs-12">
+        <div class="row bgColorWhite marginBottom15">
+            <div class="col-xs-6 padding10 ">
+                <p class=" font12 text-center marginBottom0">
+                    我的起人群<br />
+                    <b class="colorRed">{{classInfo.ClassName}}</b>
+                </p>
+            </div>
+            <div class="col-xs-6 padding10 ">
+                <p class=" font12 text-center marginBottom0">
+                    我的起人号<br />
+                    <b class="colorRed">{{student.StudentNo}}</b>
+                </p>
+            </div>
+        </div>
+            </div>
+         {{if sponsors.IsInvite}}
+        <div class="col-xs-12">
+            <div class="row marginBottom15">
+                <div class="col-xs-12">
+                    <a href="/User/Sponsors/SponsorsPopularzePromotion.aspx?SponsorsId=1">
+                        <input id="tuiguangQrCode" type="button" class="btn btn-block bgColorRed colorWhite" value="邀请朋友一起发起该项目" /></a>
+                </div>
+            </div>
+            </div>
+        {{/if}}
+    </script>
+
+    <script id="conList-tmpl" type="text/html">
+        {{each ls}}
+        <dd>
+            <img class="conListL" src="{{$value.HeadImgUrl}}" />
+            <div>
+                <b class="font16">{{$value.UName}}</b>
+                <br />
+                <span class="font12">联合发起人号:  {{$value.StudentNo}}</span>
+            </div>
+            
+        </dd>
+        {{/each}}
+    </script>
+    <script id="sponsorsQrCode" type="text/html">
+        <div class="checkPreBox">
+            <div class="checkPreBoxMid">
+                <img style="width: 100%;" src="{{imgurl}}" />
+            </div>
+        </div>
+    </script>
+    <script type="text/javascript">
+
+        var up_type = 0,
+         signed = {"uuser":{"id":7,"weid":"bm81xfgx","name":"张鹏涛","nickname":"张鹏涛","sex":1,"birthday":null,"province":null,"city":"杭州","country":"中国","headimgurl":"/UploadImage/uheaderImg/bm81xfgx.png","state":1,"bossid":"","ismaster":true,"createtime":"2016-03-30T17:11:17.063","isdelete":false,"buyurl":"/phistory","mobilephone":"15038216135","RegPartnerID":null,"PartnerID":null,"ElseField":null,"AgreementState":true,"IsMasterTime":"2016-03-30T17:12:21.323"},"unfill":true,"sign":{"ID":3,"Mobilephone":"15038216135","RealName":"张鹏涛1","SponsorsID":1,"Weid":"bm81xfgx","CreateTime":"2016-03-30T17:12:12.897","VerifiedDesc":null,"IsDelete":false,"ShopOrderCode":"20160330171212466765","SourceWeid":"","IsPay":true,"AddressId":null,"ExportBatchId":null,"AdditionDescription":null,"AuditStatus":0,"EntryAddressState":0},"sponsors":{"ID":1,"Title":"粉丝经济学","PeopleNum":0,"Price":0.0200,"StartDate":"2016-04-01T09:00:00","EndDate":"2016-07-31T23:55:00","SaleDate":"2016-12-30T09:00:00","ContentDescrip":"<p><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/join1.jpg\"></p><p style=\"text-align: center;\">新书预计发售时间：2016年4月15日</p><p><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/joinTitle1.png\" height=\"79\" width=\"123\">引言</p><p>这个世界有两样东西你不能嘲笑：一是出身，二是梦想。</p><p>什么样的出身不重要，重要的是将来成为什么样的人；出生在哪里不重要，未来在哪里才重要；生来贫穷不可怕，将来贫穷才可怕；起点低不重要，重要的是现在的转折点与未来的终点在哪里。</p><p>只要有梦想，人就会了不起，因为：人生不设限、成就无边界！</p><p><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/joinTitle2.png\" height=\"78.15625\" width=\"123\">为什么要成为联合发起人</p><ul><li><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/join2.png\"><br><p>你想成为一个人人都知道的优秀人物吗？</p></li><li><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/join3.png\"><br><p>你想让更多有价值人主动加你为好友吗？</p></li></ul><ul><li><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/join4.png\"><br><p>你想让自己的产品更好的在朋友圈展现吗？</p></li><li><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/join5.png\"><br><p>你渴望你的微信好友爆炸式的增长吗？</p></li></ul><p><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/joinTitle3.png\">关于联合发起人由来</p><p><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/join6.jpg\"></p><p><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/join7.png\">《粉丝经济学》：五哥的第一本书！也蕴含了第一季的微人脉！看到宣传的人，98.98%的人都选择了微人脉，引起了业界的轰动，700位企业家、互联网大咖、微商品牌溶于其中，这是真正落地的声音！今天微人脉升级为《粉丝经济学II》联合发起人，加入《粉丝经济学II》联合发起人一起分享商业价值！</p><p><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/joinCenter1.png\"><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/joinTitle4.png\">尊享五大超值福利</p><p><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/join8.png\"></p><p>送《粉丝经济学2》联合发起人推荐位一个，价值1000元！&nbsp;<br><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/join13.jpg\"></p><p><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/join9.png\"></p><p>进《粉丝经济学2》联合发起人微信群！&nbsp;<br><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/join14.jpg\">&nbsp;<img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/join15.jpg\"></p><p><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/join10.png\"></p><p>署名《粉丝经济学2》！&nbsp;<br><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/join16.jpg\"></p><p><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/join11.png\"></p><p>获赠20本《粉丝经济学2》价值1360元！&nbsp;<br><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/join17.jpg\"></p><p><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/join12.png\"></p><p>微领袖商学院学员中心永久展示位！&nbsp;<br><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/join18.jpg\">&nbsp;<img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/join19.jpg\"></p><p><a>立即申请《粉丝经济学II》联合发起人</a></p><p><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/joinCenter2.png\"><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/join19.png\"></p><p>五哥的《粉丝经济学 I 》从2000元一路涨价到2980元</p><p>报名截止时间：2016年3月31日<br>咨询电话：0371-55550168&nbsp;<br>负责人丰晓华：18738121691<br>公司地址：河南省郑州市东风南路与创业路绿地之窗云峰B座33A3412室<br>温馨提示:<br>首批书稿已截止，即日起报名参加联合发起人的会在第二次印刷中出现，预计4月15日。</p>","IsInvite":true,"InviteReward":0.0000,"InviteTemplate":"/UploadImage/Templet/2016/3/30/Original/201603300827234227008877126.jpg","EnableAddress":true,"ShowImg":"/UploadImage/Templet/2016/3/30/Original/201603300827305091601558557.jpg","ShareTitle":"粉丝经济学2","ShareContent":"粉丝经济学2","ShareImage":"/UploadImage/Templet/2016/3/30/Original/201603300829305034331860179.jpg","IsPublic":true,"IsOffLine":false,"IsRefund":false,"RefundScope":0,"IsVerify":true,"EnterDate":"2016-03-30T16:30:03.103","AdditionDetail":"|||","CertificateTemplate":"/UploadImage/Templet/2016/3/30/Original/201603300827265611718380421.jpg"},"orderstate":false},
+         classinfo = {"student":{"ID":4,"Weid":"bm81xfgx","ClassID":88,"CMasterID":28,"CMasterWeixin":"刘营","StudentNo":"18937003","ClassNumber":"937","StudentState":2,"CreateTime":"2016-03-30T17:12:21.373","StartDate":"2016-03-30T17:12:21.373","EndDate":"2017-03-30T17:12:21.373","KFRemark":null,"FromType":19,"PartnerId":null,"RefId":1,"ClassType":1},"unfill":true,"classInfo":{"ID":88,"GroupID":null,"ClassNumber":"937","StudentNoStart":"18937","ClassName":"微领袖第937期","StudentCount":8,"SetMaxStudent":400,"CreateTime":"2016-03-30T16:29:40.403","CurStudentNo":9,"IsFull":false,"IsEmpty":false,"ClassType":1,"RefId":1},"master":{"Id":28,"Account":"刘治营","Password":"kO8dmE0F5DjXekg+Tfy2j0+UVHotaDCjKpjsUQeZz9U=","Solt":"82a0e11e41294579b5f025a693ab29d7","CreateTime":"2016-03-10T15:02:07.857","UserType":1,"IsDelete":false,"IsBanzhang":true,"WeixinHao":"刘治营","BanzhangOnline":true,"BZKFTodayCount":null,"BZLastKFTime":"2016-03-31T09:59:39.717","BZName":"刘营","RealName":"刘营","RoleId":1,"BZQrCode":"/UploadImage/Templet/2016/3/10/Original/201603100702051394871591498.jpg","BelongItems":"0,12|1,1"},"sponsors":{"ID":1,"Title":"粉丝经济学","PeopleNum":0,"Price":0.0200,"StartDate":"2016-04-01T09:00:00","EndDate":"2016-07-31T23:55:00","SaleDate":"2016-12-30T09:00:00","ContentDescrip":"<p><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/join1.jpg\"></p><p style=\"text-align: center;\">新书预计发售时间：2016年4月15日</p><p><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/joinTitle1.png\" height=\"79\" width=\"123\">引言</p><p>这个世界有两样东西你不能嘲笑：一是出身，二是梦想。</p><p>什么样的出身不重要，重要的是将来成为什么样的人；出生在哪里不重要，未来在哪里才重要；生来贫穷不可怕，将来贫穷才可怕；起点低不重要，重要的是现在的转折点与未来的终点在哪里。</p><p>只要有梦想，人就会了不起，因为：人生不设限、成就无边界！</p><p><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/joinTitle2.png\" height=\"78.15625\" width=\"123\">为什么要成为联合发起人</p><ul><li><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/join2.png\"><br><p>你想成为一个人人都知道的优秀人物吗？</p></li><li><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/join3.png\"><br><p>你想让更多有价值人主动加你为好友吗？</p></li></ul><ul><li><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/join4.png\"><br><p>你想让自己的产品更好的在朋友圈展现吗？</p></li><li><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/join5.png\"><br><p>你渴望你的微信好友爆炸式的增长吗？</p></li></ul><p><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/joinTitle3.png\">关于联合发起人由来</p><p><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/join6.jpg\"></p><p><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/join7.png\">《粉丝经济学》：五哥的第一本书！也蕴含了第一季的微人脉！看到宣传的人，98.98%的人都选择了微人脉，引起了业界的轰动，700位企业家、互联网大咖、微商品牌溶于其中，这是真正落地的声音！今天微人脉升级为《粉丝经济学II》联合发起人，加入《粉丝经济学II》联合发起人一起分享商业价值！</p><p><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/joinCenter1.png\"><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/joinTitle4.png\">尊享五大超值福利</p><p><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/join8.png\"></p><p>送《粉丝经济学2》联合发起人推荐位一个，价值1000元！&nbsp;<br><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/join13.jpg\"></p><p><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/join9.png\"></p><p>进《粉丝经济学2》联合发起人微信群！&nbsp;<br><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/join14.jpg\">&nbsp;<img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/join15.jpg\"></p><p><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/join10.png\"></p><p>署名《粉丝经济学2》！&nbsp;<br><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/join16.jpg\"></p><p><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/join11.png\"></p><p>获赠20本《粉丝经济学2》价值1360元！&nbsp;<br><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/join17.jpg\"></p><p><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/join12.png\"></p><p>微领袖商学院学员中心永久展示位！&nbsp;<br><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/join18.jpg\">&nbsp;<img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/join19.jpg\"></p><p><a>立即申请《粉丝经济学II》联合发起人</a></p><p><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/joinCenter2.png\"><img src=\"http://u.weilingxiu.cn/Activity/weirenmai/images/join19.png\"></p><p>五哥的《粉丝经济学 I 》从2000元一路涨价到2980元</p><p>报名截止时间：2016年3月31日<br>咨询电话：0371-55550168&nbsp;<br>负责人丰晓华：18738121691<br>公司地址：河南省郑州市东风南路与创业路绿地之窗云峰B座33A3412室<br>温馨提示:<br>首批书稿已截止，即日起报名参加联合发起人的会在第二次印刷中出现，预计4月15日。</p>","IsInvite":true,"InviteReward":0.0000,"InviteTemplate":"/UploadImage/Templet/2016/3/30/Original/201603300827234227008877126.jpg","EnableAddress":true,"ShowImg":"/UploadImage/Templet/2016/3/30/Original/201603300827305091601558557.jpg","ShareTitle":"粉丝经济学2","ShareContent":"粉丝经济学2","ShareImage":"/UploadImage/Templet/2016/3/30/Original/201603300829305034331860179.jpg","IsPublic":true,"IsOffLine":false,"IsRefund":false,"RefundScope":0,"IsVerify":true,"EnterDate":"2016-03-30T16:30:03.103","AdditionDetail":"|||","CertificateTemplate":"/UploadImage/Templet/2016/3/30/Original/201603300827265611718380421.jpg"},"signInfo":{"ID":3,"Mobilephone":"15038216135","RealName":"张鹏涛1","SponsorsID":1,"Weid":"bm81xfgx","CreateTime":"2016-03-30T17:12:12.897","VerifiedDesc":null,"IsDelete":false,"ShopOrderCode":"20160330171212466765","SourceWeid":"","IsPay":true,"AddressId":null,"ExportBatchId":null,"AdditionDescription":null,"AuditStatus":0,"EntryAddressState":0}},
+         conList ={},
+         gather={},
+         pageIdx=0,
+         isLoading=false,
+         _guideExtend='additioninfo|address|headimg',
+         _guideStep=[0,0,0]||[0,0,0],   // 0|0 && 0&0  1|0 & 1*1
+         _guidDef=[0,0,1]
+        ;
+        if(signed.sign&&signed.sign.AuditStatus&&signed.sign.AuditStatus>0)
+            _guideStep[0]=1;
+        if(signed.sign&&signed.sign.AddressId&&signed.sign.AddressId>0)
+            _guideStep[1]=1;
+
+
+        //#region global function
+        function productfile_add(dt) {
+            var htmlstr = template('fileadd', { itemid: dt });
+        }
+        //#endregion
+        function clientS()
+        {
+            ;
+        }
+        function classmate()
+        {
+            if(isLoading) return;
+            isLoading=true;
+            wx.action.post("/Service/AjaxService.svc/GetSponsorsClassmate",
+                JSON.stringify({id:1,except:18937003,pageindex:pageIdx,pagesize:12}),
+                        function(msg){
+                            var data=msg.d;
+                            if(data.length>0){
+                                pageIdx++;
+                                var conListstr= template('conList-tmpl',{ls:data});
+                                $('#conList').html(conListstr);
+                            }else{
+                                pageIdx=0;
+                            }
+                            isLoading=false;
+                        },function(error){
+
+                            isLoading=false;
+                        });
+        }
+        
+        var jinzhi = 0;
+        //显示提示信息
+        var cover = function (n) {
+            var $cover=$('#cover'+n),
+                pop1=$cover.find('.maskBtn').css('top'),
+            pop2=$cover.find('img').css('top'),
+            $cover_part=$('.cover-part'+n).offset().top;
+            if(pop1) 
+                pop1=pop1.replace(/[^-\d\.]/g,'');
+            else pop2=0;
+            if(pop2)
+                pop2=pop2.replace(/[^-\d\.]/g,'');
+            else pop2=0;
+            var $img_$btn=pop1-pop2;
+            if(n==1){
+                $cover.find('.maskBtn').offset({top:$cover_part+ 'px'}).parents('div').find('.desc').offset({top:$cover_part-$img_$btn+ 'px'});
+                $cover.show();
+            }else if(n==3){
+
+                var $target=$cover.find('.maskBtn'),
+                    $target_margin_top=$target.css('margin-top');
+                if($target_margin_top)
+                    $target_margin_top=$target_margin_top.replace(/[^-\d\.]/g,'');
+                else
+                    $target_margin_top=0;
+                $target.css('top','0px').offset({top:$cover_part-$target_margin_top});
+                $cover.find('.desc').css('top','0px').offset({top:$cover_part-$img_$btn});
+                $cover.show();
+            }
+            else if( n==2 && signed.sponsors.EnableAddress){
+                $cover.find('.maskBtn').offset({top:$cover_part+ 'px'}).parents('div').find('.desc').offset({top:$cover_part-$img_$btn+ 'px'});
+                $cover.show();
+            }else{
+                
+
+                //$cover.show();
+                //$('body').css('overflow','hidden');
+            }
+        }
+        $(function() {
+            $('#headerimage').click(function(){
+                wx.action.post('/Service/AjaxService.svc/UpdateGuide',
+                       JSON.stringify({weid:'bm81xfgx',id:5,index:2}),
+                        function(msg){
+                            var data=msg.d;
+                            if(data){
+                                window.location.href='/sponsorscentorcon/1';
+                            }
+                        },
+                        function(msg){
+
+                        }
+                    );
+                
+                
+            });
+            //#region 检查
+            if(signed.sign === 'undefined' || !('sign' in signed) || signed.sign === null ){
+                clientS();
+            }
+            //#endregion 
+            var htmlstr = "";
+            //时间转换函数
+            template.helper("timeF",function(content,fmt){
+                return $.format.date(content,fmt);
+            });
+
+            //#region 未进群提示
+            htmlstr= template('nonenter-temp',classinfo);
+            $('#container').append(htmlstr);
+            //#endregion
+
+            //#region 个人信息
+            htmlstr= template('signed-tmpl',signed);
+            $('#user-info').append(htmlstr);
+            //#endregion
+
+            //#region 群信息
+            htmlstr= template('class-temp',classinfo);
+            $('#user-info').append(htmlstr);
+            //#endregion
+
+
+            //#region 列表
+            classmate();
+            $('#changeList').click(function(){
+                classmate();
+            });
+
+
+            $('#cover3').find('.header').attr('src',signed.uuser.headimgurl);
+
+            var cur_first_step=_guideStep.indexOf(0);
+
+            if(cur_first_step!=-1)
+                cover(cur_first_step+1);
+            else
+                jinzhi=1;
+
+            document.addEventListener("touchmove", function (e) {
+                if (jinzhi == 0) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                }
+            }, false);
+            //console.log($('.centerBannerCon .centerBannerImg').offset().top+'  '+$('#cover3 a').offset().top);
+
+
+            $('.coverBg img').click(function () {
+                var $parent=$(this).parent(),
+                    $parentindex=$parent.data('index')-1,
+                    $next=$parent.hide().next('.coverBg');
+                //alert($('#cover3 .desc').offset()+','+$('#cover3 .maskBtn').offset()+'   '+$('.cover-part1').offset());
+                if(_guidDef[$parentindex]==1&&_guideStep[$parentindex]!==1){
+                    wx.action.post('/Service/AjaxService.svc/UpdateGuide',
+                        JSON.stringify({weid:'bm81xfgx',id:5,index:$parentindex}),
+                        function(msg){
+                            var data=msg.d;
+                            if(data.length>0){
+                                //true
+                            }
+                        },
+                        function(msg){
+
+                        }
+                    );
+                }
+                if($next&&$next.length>0&&_guideStep[$parentindex+1]!==0){
+                    $parent=$next,
+                    $parentindex=$parent.data('index')-1,
+                    $next=$parent.hide().next('.coverBg');
+                }
+
+                if($next&&$next.length>0&&_guideStep[$parentindex+1]==_guidDef[$parentindex+1] && _guideStep[$parentindex+1]!==1){
+                    $next.show();
+                }else if($next&&$next.length>0&&_guideStep[$parentindex+1]!==_guidDef[$parentindex+1] && _guidDef[$parentindex+1]==1){
+                    $next.show();
+                }
+                else if(!($next&&$next.length>0)||($next&&$next.length>0&&$next.is(':hidden')&&_guidDef[$parentindex+1]==1)){
+                    //close完
+                    $('body').css('overflow', 'auto');
+                    jinzhi = 1;
+                    //console.info($(".coverBanzhang"));
+                    //alert($(".coverBanzhang").html());
+                        layer.open({
+                            content: $(".coverBanzhang").html(),
+                            shadeClose: true,
+                            closeBtn:1
+                        });
+                   
+                }else{
+                    $('body').css('overflow', 'auto');
+                    jinzhi = 1;
+                    layer.open({
+                        content: $(".coverBanzhang").html(),
+                        shadeClose: true,
+                        closeBtn:1
+                    });
+                }
+            });
+
+            //#endregion
+
+            //#region 生成
+            var isZhengShuLoading=false;
+            $('#lianheZhengShu').click(function(){
+
+                if('photoJSON' in gather && gather.photoJSON){
+                    
+                    htmlstr= template('sponsorsQrCode',{imgurl:gather.photoJSON});
+
+                    layer.open({
+                        content: htmlstr,
+                        shadeClose: true
+                    });
+                    return;
+                } 
+                if(isLoading) return;
+                isLoading=true;
+                wx.action.post("/Service/AjaxService.svc/GetSponsorsCertification",
+                    JSON.stringify({id:"bm81xfgx",sponsorsId:1,actName:'联人'}),
+                        function(msg){
+                            var data=msg.d;
+                            if(data.length>0){
+                                gather.photoJSON = data;
+                                htmlstr= template('sponsorsQrCode',{imgurl:gather.photoJSON});
+                                layer.open({
+                                    content: htmlstr,
+                                    shadeClose: true
+                                });
+                            }else{
+                            }
+                            isLoading=false;
+                        },function(error){
+
+                            isLoading=false;
+                });
+            });
+            //#endregion
+        });
+        ;
+    
+    </script>
+</body>
+</html>
